@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel=
+    "stylesheet">
+    <link href=
+    "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css"
+    rel="stylesheet">
+	<link rel="icon" href="https://1somebody5.github.io/siteicon.ico">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Skidhook</title>
+    <style>
+    .btn-full-width {
+    width: 100%;
+    }
+	body {
+    background-color: #ff8f07;
+}="shortcut icon" type="image/x-icon" href="https://i.gyazo.com/85fa168921248351c82021114e1c57c5.png" />
+h1 {
+    color: white;
+}
+.card {
+    position: relative;
+    margin: 0.5rem 0 1rem 0;
+    background-color: #292727;
+    transition: box-shadow .25s;
+    border-radius: 2px;
+}
+#VersionInfo { 
+    font-size: 10px;
+	color: RoyalBlue;
+}
+#VersionSpan { 
+    font-size: 10px;
+}
+#maincard {
+float:left
+}
+#bigh1 {
+color: #ad9bff;
+}
+#p1 {
+color: white;
+}
+#p2 {
+color: white;
+}
+body {
+    opacity: 1;
+    transition: 1s opacity;
+}
+body.fade-out {
+    opacity: 0;
+    transition: none;
+}
+.alert {
+    padding: 20px;
+    background-color: #f44336;
+    color: white;
+    opacity: 1;
+    transition: opacity 0.6s;
+    margin-bottom: 15px;
+}
+.alert.info {background-color: #f44336;}
+
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.closebtn:hover {
+    color: black;
+}
+	<link rel="icon" type="image/png" href="siteicon.png">
+    </style>
+</head>
+<body>
+<script>document.body.className += ' fade-out';</script>
+<div style="display: inline-block" id="maincard"><p id= "VersionInfo"><span id = "VersionSpan">lego squad uh thing idk Control Panel v1</p></div>
+<!––The support is back when it is not needed––>
+<!––Leave u s   a  l   o	  n  e––>
+<!––This may be the ende of the silent war––>
+<!––Between me and the whole server––>
+<!––k weebhook was here––>
+<div class="alert info">
+  <span class="closebtn">&times;</span>  
+  <strong>Help I'm being held against my own will to make a skid thing from my own code pls let me out and don't hurt me</strong> -Weebhook
+</div>
+    <main class="container">
+        <div class="card card-panel center">
+            <h1 id = "bigh1">lego squad thing Control Panel</h1>
+        </div>
+        <div class="card card-panel">
+            <div class="input-field">
+                <input id="content" type="text"> <label for=
+                "content">Text</label>
+            </div>
+				</div>
+            <div class="row">
+			
+        </div><a class="btn btn-large btn-full-width waves-effect waves-light"
+        href="#!" id="sendBtn" >Send</a>
+    </main>
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js" type=
+    "text/javascript">
+    </script> 
+    <script src=
+    "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js">
+    </script> 
+    <script>
+	function getRandomInt(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+	}
+    $(function() {
+        $('a').click(function(e) {
+		var input = document.getElementById("content");
+        var username = "LEGO Squad Support";
+		if (getRandomInt(1, 55) == 10) {
+		var username = "Pls hȇ̋͋̓̅l̿p mͧͨ̌̈̒̈́̍ě͐̍̀̆̃̚"
+		};
+		var avatar_url = "https://cdn.discordapp.com/emojis/427109855778570241.png?v=1";
+		var url = "https://discordapp.com/api/webhooks/427586548406550530/rGznzRum7fz63BuIOHYgvx0IJeVKipjO4lIfABe5zyatrhcpGPNwga7XD_wee7ZVJRtT";
+        var content = $("#content").val();
+        $.post(url,
+    {"content": content, "username": username, "avatar_url": avatar_url},
+        function(){
+            Materialize.toast('Message Sent!', 4000)
+        });
+        });
+    });
+    </script>
+	<script>
+	console.log('%c Skidhook Control Panel v1.2 ', 'background: #252c38; color: #3a82ff');
+	console.log('%c [+]Added Skidhook Connection Logs', 'background: #252c38; color: #3a82ff');
+	</script>
+	<script>
+	$(function() {
+    $('body').removeClass('fade-out');
+	});
+	</script>
+	<script>
+	var input = document.getElementById("content");
+	input.addEventListener("keyup", function(event) {
+  // Cancel the default action, if needed
+  event.preventDefault();
+  // Number 13 is the "Enter" key on the keyboard
+  if (event.keyCode === 13) {
+    // Trigger the button element with a click
+    document.getElementById("sendBtn").click();
+	input.value = "";
+  }
+});
+</script>
+	<script>
+var close = document.getElementsByClassName("closebtn");
+var i;
+for (i = 0; i < close.length; i++) {
+    close[i].onclick = function(){
+        var div = this.parentElement;
+        div.style.opacity = "0";
+        setTimeout(function(){ div.style.display = "none"; }, 600);
+    }
+}
+</script>
+<script>
+	  function httpGet(theUrl)
+  {
+    var xmlHttp = null;
+
+    xmlHttp = new XMLHttpRequest();
+    xmlHttp.open( "GET", theUrl, false );
+    xmlHttp.send( null );
+    return xmlHttp.responseText;
+  };
+var aaa = httpGet("https://1somebody5.github.io/aremyearsdeadyet.txt")
+if (aaa == "true") {
+var audio = new Audio('https://1somebody5.github.io/resources/yes.mp3');
+audio.play();
+} else {
+console.log("yer ears may live another day")
+};
+</script>
+</body>
+<!––Hadi is noob––>
+</html>
